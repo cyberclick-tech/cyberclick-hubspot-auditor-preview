@@ -69,3 +69,21 @@ body { font-family: 'Rubik', system-ui, sans-serif; }
         radial-gradient(circle at top right, rgba(255, 218, 213, 0.3) 0%, transparent 40%),
         radial-gradient(circle at bottom left, rgba(247, 250, 252, 0.8) 0%, transparent 50%);
 }
+
+.audit-footer {
+    background-color: #181c1e !important;
+}
+.audit-footer p,
+.audit-footer a {
+    color: rgba(255, 255, 255, 0.65) !important;
+}
+.audit-footer a:hover {
+    color: #ffffff !important;
+}
+.audit-footer a.is-current,
+.audit-footer a.is-current:hover {
+    color: #ffffff !important;
+}
+.audit-footer .hubspot-brand {
+    color: #ff7a59 !important;
+}
