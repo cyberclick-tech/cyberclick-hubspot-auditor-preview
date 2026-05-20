@@ -1,110 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy · Cyberclick HubSpot Audit</title>
-    <link rel="stylesheet" href="../../static/audit.css">
-    <script src="https://unpkg.com/htmx.org@2.0.4"></script>
-    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy · Cyberclick HubSpot Audit</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../static/audit-theme.css">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="../../static/audit-theme.js"></script>
+<script src="https://unpkg.com/htmx.org@2.0.4"></script>
 </head>
-<body>
-    <header class="audit-header">
-        <div class="audit-header__inner">
-            <a href="../" class="audit-header__brand-link">
-                <span class="audit-header__brand">Cyberclick</span>
-                <span class="audit-header__divider">·</span>
-                <span class="audit-header__product">HubSpot Audit</span>
+<body class="bg-background text-on-background min-h-screen flex flex-col relative overflow-x-hidden">
+
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-surface-variant/30 shadow-sm transition-all duration-300" id="navbar">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
+        <a href="../" class="flex items-center gap-3">
+            <img src="https://www.cyberclick.net/hs-fs/hubfs/00.%20WEBSITE/Con%C3%B3cenos/Sala%20de%20prensa/Logos%20Sala%20de%20Prensa%202025/Logo_horizontal_color_Cyberclick.png?width=170&amp;height=39&amp;name=Logo_horizontal_color_Cyberclick.png" alt="Cyberclick" class="h-7 w-auto">
+            <span class="text-tertiary">·</span>
+            <span class="font-headline-md text-headline-md font-bold text-primary"><span class="hubspot-brand">HubSpot</span> Audit</span>
+        </a>
+        <nav aria-label="Language">
+            <a href="../../es/privacy/" lang="es" hreflang="es" class="flex items-center gap-2 text-tertiary hover:text-primary transition-colors">
+                <span class="material-symbols-outlined">language</span>
+                <span class="font-label-sm text-label-sm uppercase">ES</span>
             </a>
-            
-            <nav class="audit-header__lang" aria-label="Language">
-                
-                <a href="../../es/privacy/" lang="es" hreflang="es">
-                    ES
-                </a>
-                
-            </nav>
-            
+        </nav>
+    </div>
+</nav>
+
+<main class="flex-grow pt-32 pb-stack-lg px-margin-mobile md:px-margin-desktop bg-organic-shape relative overflow-hidden">
+
+    <div class="absolute top-0 right-0 w-1/2 h-1/2 bg-gradient-to-bl from-secondary-fixed/20 to-transparent rounded-bl-full -z-10 blur-3xl opacity-60"></div>
+    <div class="absolute bottom-0 left-0 w-1/2 h-1/2 bg-gradient-to-tr from-surface-variant/40 to-transparent rounded-tr-full -z-10 blur-3xl opacity-60"></div>
+
+    <div class="max-w-[800px] mx-auto">
+        <header class="mb-stack-lg">
+            <div class="flex items-center gap-2 mb-4 text-tertiary font-label-sm uppercase tracking-wider">
+                <span class="material-symbols-outlined text-[18px]">policy</span>
+                <span class="font-label-sm text-label-sm">Legal Documentation</span>
+            </div>
+            <h1 class="font-display-xl text-headline-lg-mobile md:text-display-xl text-on-surface mb-4">Privacy Policy</h1>
+            <p class="font-body-lg text-body-lg text-tertiary">Last updated: TBD</p>
+            <div class="mt-8 p-6 bg-surface-container-low border border-surface-variant rounded-xl flex items-start gap-4">
+                <span class="material-symbols-outlined text-primary mt-1">info</span>
+                <p class="font-body-md text-body-md text-on-surface-variant m-0">
+                    <strong>Placeholder.</strong> The text below outlines the structure and the key points we know need to be covered. Final wording must be reviewed and approved by Cyberclick's legal team before publishing.
+                </p>
+            </div>
+        </header>
+
+        <article class="glass-panel rounded-2xl p-6 md:p-12 mb-stack-lg prose">
+            <section id="who-we-are">
+                <h2>1. Who we are</h2>
+                <p>This app is operated by <strong>Cyberclick Agency S.L.</strong> ("Cyberclick", "we", "us"), registered in Barcelona, Spain. For privacy questions write to <a href="mailto:privacy@cyberclick.net">privacy@cyberclick.net</a>.</p>
+            </section>
+            <section id="what-this-app-does">
+                <h2>2. What this app does</h2>
+                <p>The Cyberclick <span class="hubspot-brand">HubSpot</span> Audit connects to a <span class="hubspot-brand">HubSpot</span> portal via OAuth in order to:</p>
+                <ul>
+                    <li>Read account-level information about the portal (ID, name, currency, timezone, domain).</li>
+                    <li>Count records in standard CRM objects (contacts, companies, deals, tickets) and read deal pipeline status.</li>
+                    <li>Generate a portal snapshot visible to the installer at our public dashboard.</li>
+                    <li>Notify the installer by email and pass the snapshot to Cyberclick's Allbound team for follow-up.</li>
+                </ul>
+            </section>
+            <section id="data-we-collect">
+                <h2>3. Data we collect from your <span class="hubspot-brand">HubSpot</span> portal</h2>
+                <ul>
+                    <li>Portal identifier (Hub ID), portal display name, configuration metadata.</li>
+                    <li>Aggregate counts of standard CRM objects.</li>
+                    <li>Deal pipeline definitions and aggregate deal status counts.</li>
+                    <li>OAuth access and refresh tokens issued by <span class="hubspot-brand">HubSpot</span>, stored encrypted at rest.</li>
+                    <li>The email address of the user who installed the app (the "installer").</li>
+                </ul>
+                <p>We do not read or store individual contact records, conversations, files, or any personally identifiable information about your CRM contacts beyond the aggregate counts described above.</p>
+            </section>
+            <section id="how-we-use">
+                <h2>4. How we use your data</h2>
+                <ul>
+                    <li>To generate and deliver your portal snapshot.</li>
+                    <li>To allow Cyberclick's Allbound team to prepare a personalized audit and reach out.</li>
+                    <li>To send the installer one email with a private link to the snapshot.</li>
+                    <li>To improve the reliability and performance of this service.</li>
+                </ul>
+            </section>
+            <section id="sharing">
+                <h2>5. Sharing</h2>
+                <p>We do not sell or share your data with third parties for advertising. Internally, your snapshot is accessible only to authorized Cyberclick staff who deliver the audit follow-up. We use trusted infrastructure providers (<span class="hubspot-brand">HubSpot</span>, Amazon Web Services, our hosting provider) under appropriate data-processing terms.</p>
+            </section>
+            <section id="retention">
+                <h2>6. Retention</h2>
+                <p>We retain your portal data for as long as the app remains installed and for a limited period after uninstall to honor any pending follow-up. You can request deletion of your data at any time by emailing <a href="mailto:privacy@cyberclick.net">privacy@cyberclick.net</a>. Uninstalling the app from <span class="hubspot-brand">HubSpot</span> revokes the access tokens immediately.</p>
+            </section>
+            <section id="your-rights">
+                <h2>7. Your rights (GDPR)</h2>
+                <p>If you are in the European Economic Area, you have the rights to access, rectify, erase, restrict, and port your personal data, and to object to its processing. To exercise any of these rights write to <a href="mailto:privacy@cyberclick.net">privacy@cyberclick.net</a>.</p>
+            </section>
+            <section id="security">
+                <h2>8. Security</h2>
+                <p>OAuth tokens are stored encrypted at rest. Connections are secured with TLS. We restrict access to portal data to the minimum staff required to deliver the audit follow-up.</p>
+            </section>
+            <section id="changes">
+                <h2>9. Changes</h2>
+                <p>We may update this policy. The "Last updated" date above will reflect the latest revision. Material changes will be notified to active installations.</p>
+            </section>
+            <section id="contact">
+                <h2>10. Contact</h2>
+                <p>For any privacy-related question, write to <a href="mailto:privacy@cyberclick.net">privacy@cyberclick.net</a>.</p>
+            </section>
+        </article>
+
+        <div class="text-center">
+            <a class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-surface border border-surface-variant text-on-surface font-label-sm text-label-sm uppercase tracking-widest hover:bg-surface-variant transition-colors shadow-sm" href="../">
+                <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+                Back to audit tool
+            </a>
         </div>
-    </header>
-    <main class="audit-main">
-        
-<article class="legal">
-    <header class="legal__header">
-        <span class="audit-card__eyebrow">Privacy Policy</span>
-        <h1>Privacy Policy</h1>
-        <p class="legal__updated">Last updated: TBD</p>
-    </header>
+    </div>
+</main>
 
-    <section class="legal__section">
-        <p class="legal__placeholder"><strong>Placeholder.</strong> The text below outlines the structure and the key points we know need to be covered. Final wording must be reviewed and approved by Cyberclick's legal team before publishing.</p>
-    </section>
+<footer class="w-full bg-tertiary mt-auto">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg flex flex-col md:flex-row justify-between items-center gap-gutter">
+        <p class="font-label-sm text-label-sm text-tertiary-fixed-dim text-center md:text-left">Powered by Cyberclick · <span class="hubspot-brand">HubSpot</span> Solutions Partner</p>
+        <nav class="flex flex-wrap justify-center gap-6" aria-label="Legal">
+            <a class="font-label-sm text-label-sm text-secondary-fixed underline decoration-secondary-container" href="../privacy/">Privacy</a>
+            <a class="font-label-sm text-label-sm text-tertiary-fixed-dim/80 hover:text-secondary-fixed transition-colors" href="../terms/">Terms</a>
+            <a class="font-label-sm text-label-sm text-tertiary-fixed-dim/80 hover:text-secondary-fixed transition-colors" href="mailto:allbound@cyberclick.net">Contact</a>
+        </nav>
+    </div>
+</footer>
 
-    
-    <section class="legal__section">
-        <h2>1. Who we are</h2>
-        <p>This app is operated by <strong>Cyberclick Agency S.L.</strong> ("Cyberclick", "we", "us"), registered in Barcelona, Spain. For privacy questions write to <a href="mailto:privacy@cyberclick.net">privacy@cyberclick.net</a>.</p>
-    </section>
-    
-    <section class="legal__section">
-        <h2>2. What this app does</h2>
-        <p>The Cyberclick HubSpot Audit connects to a HubSpot portal via OAuth in order to:</p><ul><li>Read account-level information about the portal (ID, name, currency, timezone, domain).</li><li>Count records in standard CRM objects (contacts, companies, deals, tickets) and read deal pipeline status.</li><li>Generate a portal snapshot visible to the installer at our public dashboard.</li><li>Notify the installer by email and pass the snapshot to Cyberclick's Allbound team for follow-up.</li></ul>
-    </section>
-    
-    <section class="legal__section">
-        <h2>3. Data we collect from your HubSpot portal</h2>
-        <ul><li>Portal identifier (Hub ID), portal display name, configuration metadata.</li><li>Aggregate counts of standard CRM objects.</li><li>Deal pipeline definitions and aggregate deal status counts.</li><li>OAuth access and refresh tokens issued by HubSpot, stored encrypted at rest.</li><li>The email address of the user who installed the app (the "installer").</li></ul><p>We do not read or store individual contact records, conversations, files, or any personally identifiable information about your CRM contacts beyond the aggregate counts described above.</p>
-    </section>
-    
-    <section class="legal__section">
-        <h2>4. How we use your data</h2>
-        <ul><li>To generate and deliver your portal snapshot.</li><li>To allow Cyberclick's Allbound team to prepare a personalized audit and reach out.</li><li>To send the installer one email with a private link to the snapshot.</li><li>To improve the reliability and performance of this service.</li></ul>
-    </section>
-    
-    <section class="legal__section">
-        <h2>5. Sharing</h2>
-        <p>We do not sell or share your data with third parties for advertising. Internally, your snapshot is accessible only to authorized Cyberclick staff who deliver the audit follow-up. We use trusted infrastructure providers (HubSpot, Amazon Web Services, our hosting provider) under appropriate data-processing terms.</p>
-    </section>
-    
-    <section class="legal__section">
-        <h2>6. Retention</h2>
-        <p>We retain your portal data for as long as the app remains installed and for a limited period after uninstall to honor any pending follow-up. You can request deletion of your data at any time by emailing <a href="mailto:privacy@cyberclick.net">privacy@cyberclick.net</a>. Uninstalling the app from HubSpot revokes the access tokens immediately.</p>
-    </section>
-    
-    <section class="legal__section">
-        <h2>7. Your rights (GDPR)</h2>
-        <p>If you are in the European Economic Area, you have the rights to access, rectify, erase, restrict, and port your personal data, and to object to its processing. To exercise any of these rights write to <a href="mailto:privacy@cyberclick.net">privacy@cyberclick.net</a>.</p>
-    </section>
-    
-    <section class="legal__section">
-        <h2>8. Security</h2>
-        <p>OAuth tokens are stored encrypted at rest. Connections are secured with TLS. We restrict access to portal data to the minimum staff required to deliver the audit follow-up.</p>
-    </section>
-    
-    <section class="legal__section">
-        <h2>9. Changes</h2>
-        <p>We may update this policy. The "Last updated" date above will reflect the latest revision. Material changes will be notified to active installations.</p>
-    </section>
-    
-    <section class="legal__section">
-        <h2>10. Contact</h2>
-        <p>For any privacy-related question, write to <a href="mailto:privacy@cyberclick.net">privacy@cyberclick.net</a>.</p>
-    </section>
-    
-</article>
+<script>
+    window.addEventListener('scroll', () => {
+        const nav = document.getElementById('navbar');
+        if (window.scrollY > 20) {
+            nav.classList.add('shadow-md');
+            nav.classList.remove('shadow-sm');
+        } else {
+            nav.classList.add('shadow-sm');
+            nav.classList.remove('shadow-md');
+        }
+    });
+</script>
 
-    </main>
-    <footer class="audit-footer">
-        <div class="audit-footer__inner">
-            <small class="audit-footer__brand">Powered by Cyberclick · HubSpot Solutions Partner</small>
-            <nav class="audit-footer__links" aria-label="Legal">
-                <a href="../privacy/">Privacy</a>
-                <span aria-hidden="true">·</span>
-                <a href="../terms/">Terms</a>
-                <span aria-hidden="true">·</span>
-                <a href="mailto:allbound@cyberclick.net">Contact</a>
-            </nav>
-        </div>
-    </footer>
 </body>
 </html>

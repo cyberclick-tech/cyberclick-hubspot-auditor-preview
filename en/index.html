@@ -1,92 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyberclick HubSpot Audit · Free expert-led portal review</title>
-    <link rel="stylesheet" href="../static/audit.css">
-    <script src="https://unpkg.com/htmx.org@2.0.4"></script>
-    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyberclick HubSpot Audit · Free expert-led portal review</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../static/audit-theme.css">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="../static/audit-theme.js"></script>
+<script src="https://unpkg.com/htmx.org@2.0.4"></script>
 </head>
-<body>
-    <header class="audit-header">
-        <div class="audit-header__inner">
-            <a href="./" class="audit-header__brand-link">
-                <span class="audit-header__brand">Cyberclick</span>
-                <span class="audit-header__divider">·</span>
-                <span class="audit-header__product">HubSpot Audit</span>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden selection:bg-primary/20 selection:text-primary">
+
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-surface-variant/30 shadow-sm transition-all duration-300" id="navbar">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
+        <a href="./" class="flex items-center gap-3">
+            <img src="https://www.cyberclick.net/hs-fs/hubfs/00.%20WEBSITE/Con%C3%B3cenos/Sala%20de%20prensa/Logos%20Sala%20de%20Prensa%202025/Logo_horizontal_color_Cyberclick.png?width=170&amp;height=39&amp;name=Logo_horizontal_color_Cyberclick.png" alt="Cyberclick" class="h-7 w-auto">
+            <span class="text-tertiary">·</span>
+            <span class="font-headline-md text-headline-md font-bold text-primary"><span class="hubspot-brand">HubSpot</span> Audit</span>
+        </a>
+        <nav aria-label="Language">
+            <a href="../es/" lang="es" hreflang="es" class="flex items-center gap-2 text-tertiary hover:text-primary transition-colors">
+                <span class="material-symbols-outlined">language</span>
+                <span class="font-label-sm text-label-sm uppercase">ES</span>
             </a>
-            
-            <nav class="audit-header__lang" aria-label="Language">
-                
-                <a href="../es/" lang="es" hreflang="es">
-                    ES
+        </nav>
+    </div>
+</nav>
+
+<main class="pt-24 md:pt-32">
+
+<section class="relative min-h-[85vh] flex items-center overflow-hidden pb-stack-lg">
+    <div class="absolute inset-0 z-0 opacity-10 pointer-events-none">
+        <div class="absolute top-[-10%] right-[-5%] w-[800px] h-[800px] bg-secondary-container organic-shape-1 blur-3xl"></div>
+        <div class="absolute bottom-[-20%] left-[-10%] w-[600px] h-[600px] bg-primary/20 rounded-full blur-3xl"></div>
+    </div>
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+        <div class="lg:col-span-7 flex flex-col gap-stack-md pr-0 lg:pr-12">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-fixed/50 border border-secondary-fixed-dim w-fit">
+                <span class="material-symbols-outlined text-primary text-[16px]">verified</span>
+                <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Free expert audit</span>
+            </div>
+            <h1 class="font-display-xl text-headline-lg-mobile md:text-display-xl text-on-surface">
+                Get a free, <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">expert-led</span> audit of your <span class="hubspot-brand">HubSpot</span> portal.
+            </h1>
+            <p class="font-body-lg text-body-lg text-tertiary">
+                Connect your portal in under a minute. You'll see an instant snapshot of your portal as confirmation, and a specialist from our Allbound team will use the connection to put together a full audit and reach out within <strong class="text-on-surface">2 business days</strong> with personalized recommendations.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                <a href="./audit/" class="px-8 py-4 rounded-full bg-gradient-to-r from-primary to-primary-container text-on-primary font-headline-md text-body-md shadow-[0_8px_20px_rgba(181,23,50,0.25)] hover:shadow-[0_12px_25px_rgba(181,23,50,0.35)] hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 group w-fit">
+                    Connect your portal
+                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
                 </a>
-                
-            </nav>
-            
+            </div>
+            <div class="flex items-center gap-3 pt-6 opacity-70">
+                <span class="material-symbols-outlined text-tertiary text-[20px]">shield</span>
+                <p class="font-label-sm text-label-sm text-tertiary">Secure connection. Read-only access. Revoke anytime.</p>
+            </div>
         </div>
-    </header>
-    <main class="audit-main">
-        
-<section class="landing-hero">
-    <span class="audit-card__eyebrow">Free expert audit</span>
-    <h1>Get a free, expert-led audit of your HubSpot portal.</h1>
-    <p class="landing-hero__lead">Connect your HubSpot in under a minute. You'll see an instant snapshot of your portal as confirmation, and a specialist from our Allbound team will use the connection to put together a full audit and reach out within <strong>2 business days</strong> with personalized recommendations.</p>
-    <div class="landing-hero__cta">
-        <a class="audit-cta-button" href="./audit/">Connect your HubSpot</a>
+        <div class="lg:col-span-5 mt-12 lg:mt-0 relative">
+            <div class="glass-panel rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.05)] overflow-hidden border border-surface-variant relative z-10 transform lg:rotate-2 hover:rotate-0 transition-transform duration-500">
+                <div class="bg-surface-container-low h-10 border-b border-surface-variant flex items-center px-4 gap-2">
+                    <div class="w-3 h-3 rounded-full bg-outline-variant"></div>
+                    <div class="w-3 h-3 rounded-full bg-outline-variant"></div>
+                    <div class="w-3 h-3 rounded-full bg-outline-variant"></div>
+                </div>
+                <div class="p-6 bg-surface-bright/50 flex flex-col gap-4">
+                    <div class="flex items-center justify-between">
+                        <div class="flex flex-col gap-2">
+                            <div class="h-2.5 w-32 rounded-full bg-surface-variant"></div>
+                            <div class="h-2 w-20 rounded-full bg-surface-variant/60"></div>
+                        </div>
+                        <div class="flex gap-1.5">
+                            <span class="w-6 h-6 rounded-md bg-surface-variant/60"></span>
+                            <span class="w-6 h-6 rounded-md bg-primary/20"></span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="rounded-xl bg-surface border border-surface-variant p-4 flex flex-col gap-2">
+                            <span class="font-label-sm text-label-sm text-tertiary uppercase tracking-widest">Contacts</span>
+                            <div class="h-4 w-16 rounded bg-surface-variant"></div>
+                            <div class="h-2 w-10 rounded-full bg-secondary-container/40"></div>
+                        </div>
+                        <div class="rounded-xl bg-primary/5 border border-primary/20 p-4 flex flex-col gap-2">
+                            <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Health</span>
+                            <div class="h-4 w-14 rounded bg-primary/30"></div>
+                            <div class="h-2 w-12 rounded-full bg-primary/20"></div>
+                        </div>
+                    </div>
+                    <div class="rounded-xl bg-gradient-to-br from-surface to-secondary-fixed/20 border border-surface-variant p-4 h-44 relative overflow-hidden">
+                        <div class="flex items-center justify-between mb-3">
+                            <div class="h-2 w-24 rounded-full bg-surface-variant"></div>
+                            <div class="h-2 w-10 rounded-full bg-surface-variant/60"></div>
+                        </div>
+                        <svg viewBox="0 0 220 90" class="w-full h-[calc(100%-1.5rem)]" preserveAspectRatio="none" aria-hidden="true">
+                            <g>
+                                <rect x="6"   y="55" width="14" height="30" rx="3" fill="#e0e3e5"/>
+                                <rect x="28"  y="40" width="14" height="45" rx="3" fill="#e0e3e5"/>
+                                <rect x="50"  y="30" width="14" height="55" rx="3" fill="#ffb4a9"/>
+                                <rect x="72"  y="22" width="14" height="63" rx="3" fill="#ffb4a9"/>
+                                <rect x="94"  y="35" width="14" height="50" rx="3" fill="#e0e3e5"/>
+                                <rect x="116" y="18" width="14" height="67" rx="3" fill="#b51732"/>
+                                <rect x="138" y="28" width="14" height="57" rx="3" fill="#e0e3e5"/>
+                                <rect x="160" y="12" width="14" height="73" rx="3" fill="#b51732"/>
+                                <rect x="182" y="38" width="14" height="47" rx="3" fill="#e0e3e5"/>
+                                <rect x="204" y="20" width="14" height="65" rx="3" fill="#ffb4a9"/>
+                            </g>
+                            <polyline points="13,60 35,48 57,38 79,28 101,42 123,24 145,34 167,18 189,42 211,26" fill="none" stroke="#b51732" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute -bottom-8 -left-8 w-32 h-32 bg-secondary-fixed rounded-full blur-2xl opacity-60 z-0"></div>
+            <div class="absolute -top-8 -right-8 w-40 h-40 bg-primary/10 rounded-full blur-2xl opacity-60 z-0"></div>
+        </div>
     </div>
 </section>
 
-<section class="landing-section">
-    <h2>How it works</h2>
-    <ol class="landing-steps">
-        <li><strong>Connect your portal.</strong> Install the app from the HubSpot Marketplace and authorize the scopes it needs.</li>
-        <li><strong>See an instant snapshot.</strong> In under a minute we read your portal and show you what we're seeing — object volumes, recent activity, deal pipeline status.</li>
-        <li><strong>Receive your full audit.</strong> A specialist from our Allbound team reviews your portal and reaches out within 2 business days with a tailored audit.</li>
-    </ol>
+<section class="py-stack-lg md:py-[100px] bg-tertiary text-on-tertiary relative overflow-hidden">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-surface-bright mb-4">How it works</h2>
+            <p class="font-body-md text-body-lg text-tertiary-fixed-dim">A seamless, secure process designed to give you instant clarity without the friction.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+            <div class="hidden md:block absolute top-12 left-[15%] right-[15%] h-0.5 bg-gradient-to-r from-transparent via-tertiary-fixed-dim/30 to-transparent z-0"></div>
+            <div class="relative z-10 flex flex-col items-center text-center group">
+                <div class="w-24 h-24 rounded-full bg-on-tertiary-fixed flex items-center justify-center mb-6 shadow-lg border border-on-tertiary-fixed-variant group-hover:border-primary transition-colors duration-300">
+                    <span class="material-symbols-outlined text-[40px] text-surface-bright">cable</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md text-surface-bright mb-3">1. Connect your portal</h3>
+                <p class="font-body-md text-body-md text-tertiary-fixed-dim px-4">Install the app from the <span class="hubspot-brand">HubSpot</span> Marketplace and authorize the scopes it needs.</p>
+            </div>
+            <div class="relative z-10 flex flex-col items-center text-center group">
+                <div class="w-24 h-24 rounded-full bg-on-tertiary-fixed flex items-center justify-center mb-6 shadow-lg border border-on-tertiary-fixed-variant group-hover:border-secondary-container transition-colors duration-300">
+                    <span class="material-symbols-outlined text-[40px] text-surface-bright">bolt</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md text-surface-bright mb-3">2. See an instant snapshot</h3>
+                <p class="font-body-md text-body-md text-tertiary-fixed-dim px-4">In under a minute we read your portal and show you what we're seeing — object volumes, recent activity, deal pipeline status.</p>
+            </div>
+            <div class="relative z-10 flex flex-col items-center text-center group">
+                <div class="w-24 h-24 rounded-full bg-on-tertiary-fixed flex items-center justify-center mb-6 shadow-lg border border-on-tertiary-fixed-variant group-hover:border-primary transition-colors duration-300">
+                    <span class="material-symbols-outlined text-[40px] text-surface-bright">assignment_turned_in</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md text-surface-bright mb-3">3. Receive your full audit</h3>
+                <p class="font-body-md text-body-md text-tertiary-fixed-dim px-4">A specialist from our Allbound team reviews your portal and reaches out within 2 business days with a tailored audit.</p>
+            </div>
+        </div>
+    </div>
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-bl from-primary/5 to-transparent pointer-events-none"></div>
 </section>
 
-<section class="landing-section">
-    <h2>What&#39;s included</h2>
-    <div class="landing-feature-grid">
-        <div class="landing-feature">
-            <h3>Instant portal snapshot</h3>
-            <p>Configuration overview, object volumes, recent creation and activity, and a status read across your deal pipelines — visible in your browser the moment we finish reading.</p>
+<section class="py-stack-lg md:py-[100px] bg-surface relative">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="mb-12">
+            <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">What's included</h2>
+            <p class="font-body-lg text-body-lg text-tertiary max-w-2xl">Beyond automated scripts, a human-reviewed analysis of your digital engine.</p>
         </div>
-        <div class="landing-feature">
-            <h3>Personalized expert audit</h3>
-            <p>A HubSpot specialist from our Allbound team examines your portal and prepares concrete recommendations tailored to your setup, sector and stage.</p>
-        </div>
-        <div class="landing-feature">
-            <h3>You stay in control</h3>
-            <p>We never email your contacts, and you can revoke our access at any time from HubSpot.</p>
-        </div>
-        <div class="landing-feature">
-            <h3>Built by Cyberclick</h3>
-            <p>Cyberclick is a HubSpot Solutions Partner. The free audit is our way of giving every portal owner a clear read on where they stand — at no cost.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[minmax(250px,auto)]">
+            <div class="lg:col-span-2 bg-surface-container-lowest rounded-2xl p-8 border border-surface-variant shadow-[0_4px_20px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] transition-all duration-300 flex flex-col justify-between overflow-hidden relative group">
+                <div class="relative z-10">
+                    <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-primary">data_usage</span>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md text-on-surface mb-3">Instant portal snapshot</h3>
+                    <p class="font-body-md text-body-md text-tertiary max-w-md">Configuration overview, object volumes, recent creation and activity, and a status read across your deal pipelines — visible in your browser the moment we finish reading.</p>
+                </div>
+                <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-surface-container rounded-full opacity-50 group-hover:scale-110 transition-transform duration-500"></div>
+                <div class="absolute right-10 bottom-10 pointer-events-none">
+                    <span class="material-symbols-outlined text-[120px] text-surface-variant opacity-20 transform -rotate-12">bar_chart</span>
+                </div>
+            </div>
+            <div class="bg-surface-container-lowest rounded-2xl p-8 border border-surface-variant shadow-[0_4px_20px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-secondary-container/20 flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-secondary">person_search</span>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md text-on-surface mb-3">Personalized expert audit</h3>
+                    <p class="font-body-md text-body-md text-tertiary">A <span class="hubspot-brand">HubSpot</span> specialist from our Allbound team examines your portal and prepares concrete recommendations tailored to your setup, sector and stage.</p>
+                </div>
+            </div>
+            <div class="bg-surface-container-lowest rounded-2xl p-8 border border-surface-variant shadow-[0_4px_20px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-tertiary">lock_open</span>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md text-on-surface mb-3">You stay in control</h3>
+                    <p class="font-body-md text-body-md text-tertiary">We never email your contacts, and you can revoke our access at any time from <span class="hubspot-brand">HubSpot</span>.</p>
+                </div>
+            </div>
+            <div class="lg:col-span-2 bg-gradient-to-br from-surface-container-lowest to-secondary-fixed/10 rounded-2xl p-8 border border-surface-variant shadow-[0_4px_20px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] transition-all duration-300 flex flex-col md:flex-row items-center gap-8">
+                <div class="flex-1">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface border border-surface-variant mb-4">
+                        <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                        <span class="font-label-sm text-label-sm text-tertiary uppercase"><span class="hubspot-brand">HubSpot</span> Solutions Partner</span>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md text-on-surface mb-3">Built by Cyberclick</h3>
+                    <p class="font-body-md text-body-md text-tertiary">Cyberclick is a <span class="hubspot-brand">HubSpot</span> Solutions Partner. The free audit is our way of giving every portal owner a clear read on where they stand — at no cost.</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<section class="audit-card audit-card--cta">
-    <h2 style="margin-top:0;">Ready to get your audit?</h2>
-    <p class="audit-card__lead">Connect your HubSpot and an Allbound specialist will be in touch within 2 business days.</p>
-    <a class="audit-cta-button" href="./audit/">Connect your HubSpot</a>
+<section class="py-stack-lg md:py-[120px] bg-background relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-secondary-fixed rounded-full blur-[100px] opacity-30 pointer-events-none"></div>
+    <div class="max-w-3xl mx-auto px-margin-mobile md:px-margin-desktop text-center relative z-10 glass-panel p-12 rounded-[2rem]">
+        <h2 class="font-display-xl text-headline-lg-mobile md:text-headline-lg text-on-surface mb-6">Ready to get your audit?</h2>
+        <p class="font-body-lg text-body-lg text-tertiary mb-10">Connect your portal and an Allbound specialist will be in touch within 2 business days.</p>
+        <a href="./audit/" class="inline-block px-8 py-4 rounded-full bg-primary text-on-primary font-headline-md text-body-md shadow-lg hover:bg-primary-container hover:-translate-y-1 transition-all duration-300">
+            Connect your portal
+        </a>
+    </div>
 </section>
 
-    </main>
-    <footer class="audit-footer">
-        <div class="audit-footer__inner">
-            <small class="audit-footer__brand">Powered by Cyberclick · HubSpot Solutions Partner</small>
-            <nav class="audit-footer__links" aria-label="Legal">
-                <a href="./privacy/">Privacy</a>
-                <span aria-hidden="true">·</span>
-                <a href="./terms/">Terms</a>
-                <span aria-hidden="true">·</span>
-                <a href="mailto:allbound@cyberclick.net">Contact</a>
-            </nav>
-        </div>
-    </footer>
+</main>
+
+<footer class="w-full bg-tertiary py-stack-lg">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-gutter">
+        <p class="font-label-sm text-label-sm text-tertiary-fixed-dim text-center md:text-left">Powered by Cyberclick · <span class="hubspot-brand">HubSpot</span> Solutions Partner</p>
+        <nav class="flex flex-wrap justify-center gap-6" aria-label="Legal">
+            <a class="font-label-sm text-label-sm text-tertiary-fixed-dim/80 hover:text-secondary-fixed transition-colors" href="./privacy/">Privacy</a>
+            <a class="font-label-sm text-label-sm text-tertiary-fixed-dim/80 hover:text-secondary-fixed transition-colors" href="./terms/">Terms</a>
+            <a class="font-label-sm text-label-sm text-tertiary-fixed-dim/80 hover:text-secondary-fixed transition-colors" href="mailto:allbound@cyberclick.net">Contact</a>
+        </nav>
+    </div>
+</footer>
+
+<script>
+    window.addEventListener('scroll', () => {
+        const nav = document.getElementById('navbar');
+        if (window.scrollY > 20) {
+            nav.classList.add('shadow-md');
+            nav.classList.remove('shadow-sm');
+        } else {
+            nav.classList.add('shadow-sm');
+            nav.classList.remove('shadow-md');
+        }
+    });
+</script>
+
 </body>
 </html>

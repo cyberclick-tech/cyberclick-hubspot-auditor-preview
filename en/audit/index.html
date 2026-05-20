@@ -1,169 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal connected · Cyberclick HubSpot Audit</title>
-    <link rel="stylesheet" href="../../static/audit.css">
-    <script src="https://unpkg.com/htmx.org@2.0.4"></script>
-    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal connected · Cyberclick HubSpot Audit</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../static/audit-theme.css">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="../../static/audit-theme.js"></script>
+<script src="https://unpkg.com/htmx.org@2.0.4"></script>
 </head>
-<body>
-    <header class="audit-header">
-        <div class="audit-header__inner">
-            <a href="../" class="audit-header__brand-link">
-                <span class="audit-header__brand">Cyberclick</span>
-                <span class="audit-header__divider">·</span>
-                <span class="audit-header__product">HubSpot Audit</span>
+<body class="bg-background text-on-surface font-body-md min-h-screen flex flex-col relative overflow-x-hidden">
+
+<div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+    <div class="absolute -top-[20%] -right-[10%] w-[70vw] h-[70vw] rounded-full bg-secondary-fixed opacity-30 blur-3xl"></div>
+    <div class="absolute top-[40%] -left-[20%] w-[60vw] h-[60vw] rounded-full bg-surface-container-high opacity-40 blur-3xl"></div>
+</div>
+
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-surface-variant/30 shadow-sm transition-all duration-300" id="navbar">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
+        <a href="../" class="flex items-center gap-3">
+            <img src="https://www.cyberclick.net/hs-fs/hubfs/00.%20WEBSITE/Con%C3%B3cenos/Sala%20de%20prensa/Logos%20Sala%20de%20Prensa%202025/Logo_horizontal_color_Cyberclick.png?width=170&amp;height=39&amp;name=Logo_horizontal_color_Cyberclick.png" alt="Cyberclick" class="h-7 w-auto">
+            <span class="text-tertiary">·</span>
+            <span class="font-headline-md text-headline-md font-bold text-primary"><span class="hubspot-brand">HubSpot</span> Audit</span>
+        </a>
+        <nav aria-label="Language">
+            <a href="../../es/audit/" lang="es" hreflang="es" class="flex items-center gap-2 text-tertiary hover:text-primary transition-colors">
+                <span class="material-symbols-outlined">language</span>
+                <span class="font-label-sm text-label-sm uppercase">ES</span>
             </a>
-            
-            <nav class="audit-header__lang" aria-label="Language">
-                
-                <a href="../../es/audit/" lang="es" hreflang="es">
-                    ES
-                </a>
-                
-            </nav>
-            
+        </nav>
+    </div>
+</nav>
+
+<main class="flex-grow pt-32 pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full flex flex-col gap-stack-lg">
+
+    <header class="flex flex-col gap-stack-sm md:w-2/3">
+        <div class="flex items-center gap-2 mb-2">
+            <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            <span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary">Portal connected</span>
         </div>
+        <h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface">Acme Corp is now connected to Cyberclick.</h1>
+        <p class="font-body-lg text-body-lg text-tertiary mt-4">Below is a quick snapshot of your portal so you know what we're seeing. Your full audit is being prepared by our Allbound team — read on for what happens next.</p>
     </header>
-    <main class="audit-main">
-        
-<section class="audit-card audit-card--hero">
-    <span class="audit-card__eyebrow">Portal connected</span>
-    <h1>Acme Corp is now connected to Cyberclick.</h1>
-    <p class="audit-card__lead">Below is a quick snapshot of your portal so you know what we&#39;re seeing. Your full audit is being prepared by our Allbound team — read on for what happens next.</p>
-</section>
 
-<section class="audit-card audit-card--cta">
-    <span class="audit-card__eyebrow">Next step</span>
-    <h2 style="margin-top:0;">Your full audit is on its way</h2>
-    <p>A specialist from our <strong>Allbound team</strong> will review your portal and reach out within <strong>2 business days</strong> with a personalized audit and concrete recommendations.</p>
-    <p class="audit-card__small">We'll contact you on the email used to install the app. Need to reach us sooner? Drop a line to <a href="mailto:allbound@cyberclick.net">allbound@cyberclick.net</a> and the Allbound team will get back to you.</p>
-</section>
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
 
-<section class="audit-card">
-    <h2>Portal information</h2>
-    <dl class="audit-card__meta">
-        <dt>Portal ID</dt><dd>24681357</dd>
-        <dt>Company</dt><dd>Acme Corp</dd>
-        <dt>Currency</dt><dd>EUR</dd>
-        <dt>Timezone</dt><dd>Europe/Madrid</dd>
-        <dt>Domain</dt><dd>acme.com</dd>
-    </dl>
-</section>
+        <div class="lg:col-span-8 flex flex-col gap-stack-lg">
 
-<section class="audit-card">
-    <h2>Object volumes</h2>
-    <p class="audit-card__lead">
-        Records in your CRM, with how many were created in the last 30 days and how many have been active (modified) in the last 90 days.
-    </p>
-    <div class="audit-table-wrap">
-        <table class="audit-table">
-            <thead>
-                <tr>
-                    <th scope="col">Object</th>
-                    <th scope="col">Total</th>
-                    <th scope="col">Created last 30d</th>
-                    <th scope="col">Active last 90d</th>
-                </tr>
-            </thead>
-            <tbody>
-                
-                
-                <tr>
-                    <th scope="row">Contacts</th>
-                    <td>12,453</td>
-                    <td>234</td>
-                    <td>5,678</td>
-                </tr>
-                
-                
-                <tr>
-                    <th scope="row">Companies</th>
-                    <td>1,842</td>
-                    <td>12</td>
-                    <td>567</td>
-                </tr>
-                
-                
-                <tr>
-                    <th scope="row">Deals</th>
-                    <td>3,421</td>
-                    <td>89</td>
-                    <td>1,234</td>
-                </tr>
-                
-                
-                <tr>
-                    <th scope="row">Tickets</th>
-                    <td>567</td>
-                    <td>23</td>
-                    <td>145</td>
-                </tr>
-                
-            </tbody>
-        </table>
-    </div>
-</section>
+            <section class="bg-surface-container-lowest rounded-xl border border-surface-variant shadow-[0_4px_24px_rgba(0,0,0,0.02)] overflow-hidden">
+                <div class="p-stack-md border-b border-surface-variant">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-tertiary">
+                            <span class="material-symbols-outlined text-[18px]">database</span>
+                        </div>
+                        <h2 class="font-headline-md text-headline-md text-on-surface">Object volumes</h2>
+                    </div>
+                    <p class="font-body-md text-body-md text-tertiary">Records in your CRM, with how many were created in the last 30 days and how many have been active (modified) in the last 90 days.</p>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-surface-container-low border-b border-surface-variant">
+                                <th class="py-4 px-6 font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Object</th>
+                                <th class="py-4 px-6 font-label-sm text-label-sm text-tertiary uppercase tracking-wider text-right">Total</th>
+                                <th class="py-4 px-6 font-label-sm text-label-sm text-tertiary uppercase tracking-wider text-right">Created last 30d</th>
+                                <th class="py-4 px-6 font-label-sm text-label-sm text-tertiary uppercase tracking-wider text-right">Active last 90d</th>
+                            </tr>
+                        </thead>
+                        <tbody class="font-label-sm text-[14px]">
+                            <tr class="border-b border-surface-variant/50 table-row-hover transition-colors">
+                                <td class="py-4 px-6 font-medium text-on-surface"><span class="material-symbols-outlined text-tertiary text-[16px] align-middle mr-2">contacts</span>Contacts</td>
+                                <td class="py-4 px-6 text-right">12,453</td>
+                                <td class="py-4 px-6 text-right text-primary">234</td>
+                                <td class="py-4 px-6 text-right">5,678</td>
+                            </tr>
+                            <tr class="border-b border-surface-variant/50 table-row-hover transition-colors">
+                                <td class="py-4 px-6 font-medium text-on-surface"><span class="material-symbols-outlined text-tertiary text-[16px] align-middle mr-2">domain</span>Companies</td>
+                                <td class="py-4 px-6 text-right">1,842</td>
+                                <td class="py-4 px-6 text-right text-primary">12</td>
+                                <td class="py-4 px-6 text-right">567</td>
+                            </tr>
+                            <tr class="border-b border-surface-variant/50 table-row-hover transition-colors">
+                                <td class="py-4 px-6 font-medium text-on-surface"><span class="material-symbols-outlined text-tertiary text-[16px] align-middle mr-2">monetization_on</span>Deals</td>
+                                <td class="py-4 px-6 text-right">3,421</td>
+                                <td class="py-4 px-6 text-right text-primary">89</td>
+                                <td class="py-4 px-6 text-right">1,234</td>
+                            </tr>
+                            <tr class="table-row-hover transition-colors">
+                                <td class="py-4 px-6 font-medium text-on-surface"><span class="material-symbols-outlined text-tertiary text-[16px] align-middle mr-2">confirmation_number</span>Tickets</td>
+                                <td class="py-4 px-6 text-right">567</td>
+                                <td class="py-4 px-6 text-right text-primary">23</td>
+                                <td class="py-4 px-6 text-right">145</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
 
+            <section class="bg-surface-container-lowest rounded-xl border border-surface-variant shadow-[0_4px_24px_rgba(0,0,0,0.02)] overflow-hidden">
+                <div class="p-stack-md border-b border-surface-variant">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-tertiary">
+                            <span class="material-symbols-outlined text-[18px]">view_kanban</span>
+                        </div>
+                        <h2 class="font-headline-md text-headline-md text-on-surface">Deal pipelines</h2>
+                    </div>
+                    <p class="font-body-md text-body-md text-tertiary">A status read across each of your deal pipelines.</p>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-surface-container-low border-b border-surface-variant">
+                                <th class="py-4 px-6 font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Pipeline</th>
+                                <th class="py-4 px-6 font-label-sm text-label-sm text-tertiary uppercase tracking-wider text-right">Total</th>
+                                <th class="py-4 px-6 font-label-sm text-label-sm text-tertiary uppercase tracking-wider text-right">Open</th>
+                                <th class="py-4 px-6 font-label-sm text-label-sm text-tertiary uppercase tracking-wider text-right">Won</th>
+                                <th class="py-4 px-6 font-label-sm text-label-sm text-tertiary uppercase tracking-wider text-right">Lost</th>
+                            </tr>
+                        </thead>
+                        <tbody class="font-label-sm text-[14px]">
+                            <tr class="border-b border-surface-variant/50 table-row-hover transition-colors">
+                                <td class="py-4 px-6 font-medium text-on-surface">Sales Pipeline</td>
+                                <td class="py-4 px-6 text-right font-medium">2,854</td>
+                                <td class="py-4 px-6 text-right text-tertiary">412</td>
+                                <td class="py-4 px-6 text-right text-[#0f766e]">2,098</td>
+                                <td class="py-4 px-6 text-right text-error">344</td>
+                            </tr>
+                            <tr class="table-row-hover transition-colors">
+                                <td class="py-4 px-6 font-medium text-on-surface">Renewals</td>
+                                <td class="py-4 px-6 text-right font-medium">567</td>
+                                <td class="py-4 px-6 text-right text-tertiary">89</td>
+                                <td class="py-4 px-6 text-right text-[#0f766e]">412</td>
+                                <td class="py-4 px-6 text-right text-error">66</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
 
-<section class="audit-card">
-    <h2>Deal pipelines</h2>
-    <p class="audit-card__lead">A status read across each of your deal pipelines.</p>
-    <div class="audit-table-wrap">
-        <table class="audit-table">
-            <thead>
-                <tr>
-                    <th scope="col">Pipeline</th>
-                    <th scope="col">Total</th>
-                    <th scope="col">Open</th>
-                    <th scope="col">Won</th>
-                    <th scope="col">Lost</th>
-                </tr>
-            </thead>
-            <tbody>
-                
-                <tr>
-                    <th scope="row">Sales Pipeline</th>
-                    <td>2,854</td>
-                    <td>412</td>
-                    <td>2,098</td>
-                    <td>344</td>
-                </tr>
-                
-                <tr>
-                    <th scope="row">Renewals</th>
-                    <td>567</td>
-                    <td>89</td>
-                    <td>412</td>
-                    <td>66</td>
-                </tr>
-                
-            </tbody>
-        </table>
-    </div>
-</section>
-
-
-<section class="audit-card audit-card--meta">
-    <p class="audit-card__small">
-        Snapshot generated 2026-05-11 09:23 UTC · Connection completed 2026-05-11 09:25 UTC.
-    </p>
-</section>
-
-    </main>
-    <footer class="audit-footer">
-        <div class="audit-footer__inner">
-            <small class="audit-footer__brand">Powered by Cyberclick · HubSpot Solutions Partner</small>
-            <nav class="audit-footer__links" aria-label="Legal">
-                <a href="../privacy/">Privacy</a>
-                <span aria-hidden="true">·</span>
-                <a href="../terms/">Terms</a>
-                <span aria-hidden="true">·</span>
-                <a href="mailto:allbound@cyberclick.net">Contact</a>
-            </nav>
+            <p class="font-label-sm text-label-sm text-tertiary mt-4">Snapshot generated 2026-05-11 09:23 UTC · Connection completed 2026-05-11 09:25 UTC.</p>
         </div>
-    </footer>
+
+        <div class="lg:col-span-4 flex flex-col gap-gutter lg:sticky lg:top-28">
+
+            <section class="glass-panel rounded-xl p-stack-md relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -z-10 group-hover:bg-primary/10 transition-colors duration-500"></div>
+                <span class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-4 block">Next step</span>
+                <h2 class="font-headline-md text-headline-md text-on-surface mb-4">Your full audit is on its way</h2>
+                <p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                    A specialist from our <strong class="text-on-surface font-semibold">Allbound team</strong> will review your portal and reach out within <strong class="text-on-surface font-semibold">2 business days</strong> with a personalized audit and concrete recommendations.
+                </p>
+                <div class="bg-surface-container-low p-4 rounded-lg mt-6 text-sm border border-surface-variant/50">
+                    <p class="text-tertiary">We'll contact you on the email used to install the app. Need to reach us sooner? Drop a line to <a class="text-primary hover:underline font-medium" href="mailto:allbound@cyberclick.net">allbound@cyberclick.net</a> and the Allbound team will get back to you.</p>
+                </div>
+            </section>
+
+            <section class="bg-surface-container-lowest rounded-xl p-stack-md border border-surface-variant shadow-sm">
+                <h2 class="font-headline-md text-[20px] text-on-surface mb-6 flex items-center gap-2">
+                    <span class="material-symbols-outlined text-tertiary">info</span>
+                    Portal information
+                </h2>
+                <dl class="flex flex-col gap-4">
+                    <div class="flex justify-between items-center py-2 border-b border-surface-container-high last:border-0">
+                        <dt class="font-label-sm text-label-sm text-tertiary uppercase tracking-wide">Portal ID</dt>
+                        <dd class="font-label-sm text-[14px] font-medium text-on-surface">24681357</dd>
+                    </div>
+                    <div class="flex justify-between items-center py-2 border-b border-surface-container-high last:border-0">
+                        <dt class="font-label-sm text-label-sm text-tertiary uppercase tracking-wide">Company</dt>
+                        <dd class="font-label-sm text-[14px] font-medium text-on-surface">Acme Corp</dd>
+                    </div>
+                    <div class="flex justify-between items-center py-2 border-b border-surface-container-high last:border-0">
+                        <dt class="font-label-sm text-label-sm text-tertiary uppercase tracking-wide">Currency</dt>
+                        <dd class="font-label-sm text-[14px] font-medium text-on-surface">EUR</dd>
+                    </div>
+                    <div class="flex justify-between items-center py-2 border-b border-surface-container-high last:border-0">
+                        <dt class="font-label-sm text-label-sm text-tertiary uppercase tracking-wide">Timezone</dt>
+                        <dd class="font-label-sm text-[14px] font-medium text-on-surface">Europe/Madrid</dd>
+                    </div>
+                    <div class="flex justify-between items-center py-2 last:border-0">
+                        <dt class="font-label-sm text-label-sm text-tertiary uppercase tracking-wide">Domain</dt>
+                        <dd class="font-label-sm text-[14px] font-medium text-on-surface">acme.com</dd>
+                    </div>
+                </dl>
+            </section>
+        </div>
+    </div>
+</main>
+
+<footer class="w-full bg-tertiary mt-auto">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg flex flex-col md:flex-row justify-between items-center gap-gutter">
+        <p class="font-label-sm text-label-sm text-tertiary-fixed-dim text-center md:text-left">Powered by Cyberclick · <span class="hubspot-brand">HubSpot</span> Solutions Partner</p>
+        <nav class="flex flex-wrap justify-center gap-6" aria-label="Legal">
+            <a class="font-label-sm text-label-sm text-tertiary-fixed-dim/80 hover:text-secondary-fixed transition-colors" href="../privacy/">Privacy</a>
+            <a class="font-label-sm text-label-sm text-tertiary-fixed-dim/80 hover:text-secondary-fixed transition-colors" href="../terms/">Terms</a>
+            <a class="font-label-sm text-label-sm text-tertiary-fixed-dim/80 hover:text-secondary-fixed transition-colors" href="mailto:allbound@cyberclick.net">Contact</a>
+        </nav>
+    </div>
+</footer>
+
+<script>
+    window.addEventListener('scroll', () => {
+        const nav = document.getElementById('navbar');
+        if (window.scrollY > 20) {
+            nav.classList.add('shadow-md');
+            nav.classList.remove('shadow-sm');
+        } else {
+            nav.classList.add('shadow-sm');
+            nav.classList.remove('shadow-md');
+        }
+    });
+</script>
+
 </body>
 </html>
