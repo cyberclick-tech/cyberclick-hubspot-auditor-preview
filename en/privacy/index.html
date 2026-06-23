@@ -68,13 +68,16 @@
             <section id="data-we-collect">
                 <h2>3. Data we collect from your <span class="hubspot-brand">HubSpot</span> portal</h2>
                 <ul>
-                    <li>Portal identifier (Hub ID), portal display name, configuration metadata.</li>
-                    <li>Aggregate counts of standard CRM objects.</li>
-                    <li>Deal pipeline definitions and aggregate deal status counts.</li>
+                    <li>Portal metadata: Hub ID, name, tier, currency, timezone, domain, enabled Hubs and user/owner directory.</li>
+                    <li>Aggregate counts of standard CRM objects (contacts, companies, deals, products, tickets, line items, quotes) and engagements (emails, calls, meetings, notes, tasks).</li>
+                    <li>Deal pipelines: stage definitions and aggregate deal status per pipeline.</li>
+                    <li>Asset metadata — not contents — for marketing campaigns, emails, lists, forms, landing pages, templates, sequences, target accounts, knowledge base articles, feedback surveys and workflows: names, types, status and usage statistics.</li>
+                    <li>Property definitions and per-property fill rate for contacts, companies and deals.</li>
+                    <li>Email health and data-quality indicators: we read only status flags from contact records (hard bounce, invalid, opt-out, marketable status, presence of phone, and identification fields like name/email/domain for duplicate estimation) to compute aggregate metrics.</li>
                     <li>OAuth access and refresh tokens issued by <span class="hubspot-brand">HubSpot</span>, stored encrypted at rest.</li>
                     <li>The email address of the user who installed the app (the "installer").</li>
                 </ul>
-                <p>We do not read or store individual contact records, conversations, files, or any personally identifiable information about your CRM contacts beyond the aggregate counts described above.</p>
+                <p>We do not read or store individual conversations, the content of emails or notes, call recordings, attached files, or any free-form content from your CRM records.</p>
             </section>
             <section id="how-we-use">
                 <h2>4. How we use your data</h2>
